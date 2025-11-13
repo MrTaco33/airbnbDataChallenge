@@ -1,0 +1,12 @@
+# R / RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Archivo gigante que NO queremos subir
+data/raw/reviews1.csv
