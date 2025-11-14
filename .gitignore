@@ -8,5 +8,9 @@
 .DS_Store
 Thumbs.db
 
+
+
 # Archivo gigante que NO queremos subir
 data/raw/reviews1.csv
+
+.env
