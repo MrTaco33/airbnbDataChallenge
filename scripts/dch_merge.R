@@ -113,7 +113,9 @@ listings2 <- left_join(listings, crimen_genero_anual_wide,
 
 # exportar
 fwrite(listings1, "data/data_dch/processed/listings_delitos_alto_impacto.csv",
-       row.names = F)
-fwrite(listings1, "data/data_dch/processed/listings_delitos_perspectiva_genero.csv",
-       row.names = F)
+       row.names = FALSE)
+
+fwrite(listings2, "data/data_dch/processed/listings_delitos_perspectiva_genero.csv",
+       row.names = FALSE)
+
 
