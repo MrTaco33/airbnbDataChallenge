@@ -513,7 +513,7 @@ if (length(columnas_tasa_total) > 0) {
   
   # Guardar
   ggsave(
-    filename = paste0("output/mapa_delitos_total_", anio, ".png"),
+    filename = paste0("figs/mapa_delitos_total_", anio, ".png"),
     plot = mapa_total,
     width = 12,
     height = 10,
@@ -559,7 +559,7 @@ if (length(columnas_delitos_especificos) > 0) {
     
     # Guardar
     ggsave(
-      filename = paste0("output/mapa_", gsub(" ", "_", tolower(nombre_delito)), "_", anio_robo, ".png"),
+      filename = paste0("figs/mapa_", gsub(" ", "_", tolower(nombre_delito)), "_", anio_robo, ".png"),
       plot = mapa_robo,
       width = 12,
       height = 10,
@@ -589,7 +589,7 @@ if (length(columnas_delitos_especificos) > 0) {
     
     # Guardar
     ggsave(
-      filename = paste0("output/mapa_", gsub(" ", "_", tolower(nombre_delito)), "_", anio_homicidio, ".png"),
+      filename = paste0("figs/mapa_", gsub(" ", "_", tolower(nombre_delito)), "_", anio_homicidio, ".png"),
       plot = mapa_homicidio,
       width = 12,
       height = 10,
@@ -632,7 +632,7 @@ if (length(columnas_genero_total) > 0 && length(columnas_tasa_total) > 0) {
   
   # Guardar
   ggsave(
-    filename = paste0("output/mapa_delitos_genero_total_", anio_genero, ".png"),
+    filename = paste0("figs/mapa_delitos_genero_total_", anio_genero, ".png"),
     plot = mapa_genero,
     width = 12,
     height = 10,
@@ -662,7 +662,7 @@ if (length(columnas_tasa_total) > 0) {
   print(top_colonias, n = 20)
   
   # Guardar tabla
-  fwrite(top_colonias, "output/top_colonias_peligrosas.csv")
+  fwrite(top_colonias, "figs/top_colonias_peligrosas.csv")
 }
 
 cat("\n=== MAPAS GENERADOS ===\n")
